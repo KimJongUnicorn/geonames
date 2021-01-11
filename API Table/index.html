@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>API Table Project</title>
+        <meta name="description" content="API Table Project">
+        <meta name="author" content="Harry Adams">
+
+        <link rel="stylesheet" href="css/apitable.css">
+
+    </head>
+
+    <body>
+        
+        <table id="apiTable">
+            <tr>
+                <th>API Name</th>
+                <th>API Description</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>WeatherICAO</td>
+                <td>Returns weather info based on an ICAO location code</td>
+                <td><a href="#weather">Jump To</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h1 id=weather>WeatherICAO</h1>
+
+        <select id="selICAO">
+			<option value="EGLW">London</option>
+			<option value="LFPB">Paris</option>
+			<option value="EDDI">Berlin</option>
+			<option value="LEMD">Madrid</option>
+			<option value="RJTT">Tokyo</option>
+		</select>
+
+		<button id="btnRun">Run</button>
+        
+        <div id="divResults">
+			
+			<table>
+
+				<tr>
+					<td align="right">
+						Station Name: 
+					</td>
+					<td id="txtStationName">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						Clouds: 
+					</td>
+					<td id="txtClouds">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						Country Code: 
+					</td>
+					<td id="txtCountryCode">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						Temperature: 
+					</td>
+					<td id="txtTemperature">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						Humidity: 
+					</td>
+					<td id="txtHumidity">
+						
+					</td>
+
+				</tr>
+
+
+			</table>
+
+		</div>
+
+        <script type="application/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="js/script.js"></script>
+
+
+    </body>
+
+</html>
