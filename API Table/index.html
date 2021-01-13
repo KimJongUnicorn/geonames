@@ -23,13 +23,13 @@
             </tr>
             <tr>
                 <td>WeatherICAO</td>
-                <td>Returns weather info based on an ICAO location code</td>
+                <td>Returns weather info based on an ICAO location code.</td>
                 <td><a href="#weather">Jump To</a></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Neighbours</td>
+                <td>Returns a list of neighbouring countries based on a country code.</td>
+                <td><a href="#neighbours">Jump To</a></td>
             </tr>
             <tr>
                 <td></td>
@@ -43,16 +43,16 @@
         <h1 id=weather>WeatherICAO</h1>
 
         <select id="selICAO">
-			<option value="EGLW">London</option>
+			<option value="EGLC">London</option>
 			<option value="LFPB">Paris</option>
-			<option value="EDDI">Berlin</option>
+			<option value="EDDB">Berlin</option>
 			<option value="LEMD">Madrid</option>
 			<option value="RJTT">Tokyo</option>
 		</select>
 
-		<button id="btnRun">Run</button>
+		<button id="btnRun1">Run</button>
         
-        <div id="divResults">
+        <div id="results1">
 			
 			<table>
 
@@ -88,7 +88,7 @@
 
 				<tr>
 					<td align="right">
-						Temperature: 
+						Temperature(<span>&#176;</span>C): 
 					</td>
 					<td id="txtTemperature">
 						
@@ -108,6 +108,23 @@
 
 
 			</table>
+
+		</div>
+
+		<h1 id=neighbours>Neighbours</h1>
+
+        <select id="selCountry">
+			<option value="GB">Great Britain</option>
+			<option value="FR">France</option>
+			<option value="IT">Italy</option>
+			<option value="DE">Germany</option>
+		</select>
+
+		<button id="btnRun2">Run</button>
+        
+        <div id="results2">
+			
+			<ul id=txtName></ul>
 
 		</div>
 
