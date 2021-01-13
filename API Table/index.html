@@ -32,9 +32,9 @@
                 <td><a href="#neighbours">Jump To</a></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Ocean</td>
+                <td>Retuns the nearest ocean based on latitude and longitude</td>
+                <td><a href="#ocean">Jump To</a></td>
             </tr>
         </table>
 
@@ -111,7 +111,9 @@
 
 		</div>
 
-		<h1 id=neighbours>Neighbours</h1>
+		<br>
+
+		<h1 id="neighbours">Neighbours</h1>
 
         <select id="selCountry">
 			<option value="GB">Great Britain</option>
@@ -124,9 +126,41 @@
         
         <div id="results2">
 			
-			<ul id=txtName></ul>
+			<ul style="list-style: none;">
+				<li id="txtCountryName1"></li>
+				<li id="txtCountryName2"></li>
+				<li id="txtCountryName3"></li>
+				<li id="txtCountryName4"></li>
+				<li id="txtCountryName5"></li>
+			</ul>
 
 		</div>
+
+		<br>
+
+		<h1 id=hierarchy>Hierarchy</h1>
+
+		<select id="selGeoNameId">
+			<option value="6269131">England</option>
+			<option value="3017382">France</option>
+			<option value="3175395">Italy</option>
+			<option value="2921044">Germany</option>
+			<option value="1269750">India</option>
+		</select>
+
+		<button id="btnRun3">Run</button>
+
+		<div id="results3">
+
+			<ul style="list-style: none;">
+				<li id="txtPlaceName1"></li>
+				<li id="txtPlaceName2"></li>
+				<li id="txtPlaceName3"></li>
+				
+			</ul>
+
+		</div>
+			
 
         <script type="application/javascript" src="js/jquery-2.2.3.min.js"></script>
 		<script type="application/javascript" src="js/script.js"></script>
